@@ -1,25 +1,44 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  
+  let Carta = ( props ) => { 
+    
+    let carta = (
+      <div class="col-4 card" >
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">{props.children}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    );
+
+    return carta;
+
+  };
+
+  // let datos = Array;
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div className='container'>
+
+      <div className='row'>
+        <Carta>UNO</Carta>
+        <Carta>DOS</Carta>
+        <Carta>TRES</Carta>
+        <Carta>TRES</Carta>
+        <Carta>TRES</Carta>
+
+      </div>
+
     </div>
+
   );
+
 }
 
 export default App;
