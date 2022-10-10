@@ -1,2 +1,2 @@
-# cursoRect
+# cursoReact
 Curso de react
